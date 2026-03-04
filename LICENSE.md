@@ -35,8 +35,5 @@ Bu Sözleşme, siz veya Geliştirici tarafından feshedilene kadar yürürlükte
 8. DEĞİŞİKLİKLER
 Geliştirici, kendi takdirine bağlı olarak bu Sözleşmeyi dilediği zaman değiştirme veya güncelleme hakkını saklı tutar. Yazılımın güncellenmiş sürümlerinin kullanımı, söz konusu güncel EULA şartlarının kabul edildiği anlamına gelir.
 
-İLETİŞİM
-Bu sözleşme hakkında herhangi bir sorunuz varsa veya Yazılımla ilgili iletişime geçmek isterseniz, yapımcı @ebuword ile iletişime geçebilirsiniz.
-
-Sürüm: 1.0.0
+İlk Sürüm: 1.0.1
 Telif Hakkı (c) 2026 @ebuword. Tüm hakları saklıdır.
