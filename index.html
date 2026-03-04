@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotaB — Windows için Akıllı Launcher</title>
+    <meta name="description"
+        content="NotaB, Alt+Space ile anında döviz çevirisi, matematik hesaplama, Wikipedia araması ve daha fazlasını sunan ücretsiz Windows launcher uygulaması.">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========== NAV ========== -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <img src="assets/logo.png" alt="NotaB" class="nav-logo-img">
+                <span class="nav-logo-text">NotaB</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Özellikler</a>
+                <!-- <a href="#demo">Demo</a> -->
+                <a href="#commands">Komutlar</a>
+                <a href="#download" class="nav-cta">İndir</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+            <div class="hero-grid"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-badge animate-in">
+                <span class="badge-dot"></span>
+                Windows için Ücretsiz
+            </div>
+            <h1 class="hero-title animate-in delay-1">
+                Her şey<br>
+                <span class="gradient-text">bir tuş uzağında.</span>
+            </h1>
+            <p class="hero-subtitle animate-in delay-2">
+                NotaB, anında döviz çevirisi, matematik hesaplama, Wikipedia araması
+                ve web araması yapabileceğin akıllı bir Windows launcher.
+            </p>
+            <div class="hero-actions animate-in delay-3">
+                <a href="#download" class="btn btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    Hemen İndir
+                </a>
+                <a href="#commands" class="btn btn-ghost">
+                    Komutlar
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6 9 12 15 18 9" />
+                    </svg>
+                </a>
+            </div>
+            <div class="hero-shortcut animate-in delay-4">
+                <kbd>Alt</kbd> <span>+</span> <kbd>Space</kbd>
+                <span class="shortcut-label">ile başla</span>
+            </div>
+        </div>
+
+        <div class="hero-mockup animate-in delay-3">
+            <div class="mockup-glow"></div>
+            <div class="mockup-window">
+                <div class="mockup-search">
+                    <div class="mockup-search-icon">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                        </svg>
+                    </div>
+                    <div class="mockup-typing" id="mockupTyping"></div>
+                    <div class="mockup-badge">ALT+SPACE</div>
+                </div>
+                <div class="mockup-result" id="mockupResult">
+                    <div class="mockup-result-icon">$</div>
+                    <div class="mockup-result-body">
+                        <div class="mockup-result-value">438,33 <span>₺</span></div>
+                        <div class="mockup-result-label">10,00 $ ABD Doları → Türk Lirası</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FEATURES ========== -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Özellikler</span>
+                <h2 class="section-title">Güçlü. Hızlı. <span class="gradient-text">Zarif.</span></h2>
+                <p class="section-desc">Bir tuşla her şeye eriş. NotaB günlük iş akışını hızlandırır.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card feature-card-lg" data-animate>
+                    <div class="feature-icon currency-icon">
+                        <span>$</span><span>€</span><span>£</span>
+                    </div>
+                    <h3>Anlık Döviz Çevirisi</h3>
+                    <p>"10 dolar" yaz, anında TL karşılığını gör. USD, EUR, GBP desteklenir. Ücretsiz API, sınırsız
+                        sorgu.</p>
+                    <div class="feature-mockup" id="featureMockupCurrency">
+                        <div class="fm-search">
+                            <svg class="fm-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                            <span class="fm-typing"></span>
+                        </div>
+                        <div class="fm-result">
+                            <div class="fm-result-icon" style="background: linear-gradient(135deg, #6c8cff, #4c6ef5);">$
+                            </div>
+                            <div class="fm-result-body">
+                                <div class="fm-result-value">439,70 <span>₺</span></div>
+                                <div class="fm-result-label">10,00 $ ABD Doları → Türk Lirası</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon math-icon">=</div>
+                    <h3>Hesap Makinesi</h3>
+                    <p>Karmaşık matematik işlemlerini anında çöz. sqrt, sin, cos, log, üs — hepsi destekleniyor.</p>
+                    <div class="feature-mockup" id="featureMockupMath">
+                        <div class="fm-search">
+                            <svg class="fm-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                            <span class="fm-typing"></span>
+                        </div>
+                        <div class="fm-result">
+                            <div class="fm-result-icon" style="background: linear-gradient(135deg, #4ade80, #22c55e);">=
+                            </div>
+                            <div class="fm-result-body">
+                                <div class="fm-result-value">12</div>
+                                <div class="fm-result-label">sqrt(144) =</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon wiki-icon">W</div>
+                    <h3>Wikipedia Araması</h3>
+                    <p>"w: İstanbul" yaz, özet bilgi anında gelsin. Tıklayarak tam makaleye git.</p>
+                    <div class="feature-mockup" id="featureMockupWiki">
+                        <div class="fm-search">
+                            <svg class="fm-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                            <span class="fm-typing"></span>
+                        </div>
+                        <div class="fm-result">
+                            <div class="fm-result-icon"
+                                style="background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));">
+                                W</div>
+                            <div class="fm-result-body">
+                                <div class="fm-result-value">İstanbul</div>
+                                <div class="fm-result-label">Türkiye'nin en kalabalık şehri...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon yt-icon">▶</div>
+                    <h3>YouTube Araması</h3>
+                    <p>"y: lofi" yazıp Enter'a bas. Doğrudan YouTube arama sonuçları açılsın.</p>
+                </div>
+
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon search-icon-feat">G</div>
+                    <h3>Akıllı Web Araması</h3>
+                    <p>Herhangi bir şey yaz — Google, YouTube ve Wikipedia linkleri tek ekranda.</p>
+                    <div class="feature-mockup" id="featureMockupGeneral">
+                        <div class="fm-search">
+                            <svg class="fm-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg>
+                            <span class="fm-typing"></span>
+                        </div>
+                        <div class="fm-result fm-result-multi">
+                            <div class="fm-result-row">
+                                <div class="fm-result-icon fm-icon-sm"
+                                    style="background: linear-gradient(135deg, #4285f4, #3367d6);">G</div>
+                                <span class="fm-result-link">Google'da ara</span>
+                            </div>
+                            <div class="fm-result-row">
+                                <div class="fm-result-icon fm-icon-sm"
+                                    style="background: linear-gradient(135deg, #ff4444, #cc0000);">▶</div>
+                                <span class="fm-result-link">YouTube'da ara</span>
+                            </div>
+                            <div class="fm-result-row">
+                                <div class="fm-result-icon fm-icon-sm"
+                                    style="background: linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));">
+                                    W</div>
+                                <span class="fm-result-link">Wikipedia'da ara</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-card" data-animate>
+                    <div class="feature-icon keyboard-icon">⌨</div>
+                    <h3>Klavye Odaklı</h3>
+                    <p>Arrow tuşlarıyla gez, Enter ile seç, Escape ile kapat. Fare gereksiz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DEMO ==========
+    <section class="demo-section" id="demo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Demo</span>
+                <h2 class="section-title">Çalışırken <span class="gradient-text">gör.</span></h2>
+                <p class="section-desc">NotaB'ın tüm özelliklerini tek bir demoda izle.</p>
+            </div>
+
+            <div class="demo-player" data-animate>
+                <div class="demo-player-glow"></div>
+                <div class="demo-slideshow" id="demoSlideshow">
+                    <div class="demo-slide active">
+                        <img src="assets/demo-currency.png" alt="Döviz çevirisi">
+                        <div class="demo-slide-caption">
+                            <span class="demo-slide-cmd">> 10 dolar</span>
+                            <span class="demo-slide-label">Anlık döviz çevirisi</span>
+                        </div>
+                    </div>
+                    <div class="demo-slide">
+                        <img src="assets/demo-math.png" alt="Matematik hesaplama">
+                        <div class="demo-slide-caption">
+                            <span class="demo-slide-cmd">> 2+2</span>
+                            <span class="demo-slide-label">Matematik hesaplama</span>
+                        </div>
+                    </div>
+                    <div class="demo-slide">
+                        <img src="assets/demo-wiki.png" alt="Wikipedia araması">
+                        <div class="demo-slide-caption">
+                            <span class="demo-slide-cmd">> w: istanbul</span>
+                            <span class="demo-slide-label">Wikipedia araması</span>
+                        </div>
+                    </div>
+                    <div class="demo-slide">
+                        <img src="assets/demo-general.png" alt="Genel arama">
+                        <div class="demo-slide-caption">
+                            <span class="demo-slide-cmd">> javascript</span>
+                            <span class="demo-slide-label">Akıllı web araması</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-dots" id="demoDots">
+                    <button class="demo-dot active" data-index="0"></button>
+                    <button class="demo-dot" data-index="1"></button>
+                    <button class="demo-dot" data-index="2"></button>
+                    <button class="demo-dot" data-index="3"></button>
+                </div>
+                <div class="demo-progress" id="demoProgress">
+                    <div class="demo-progress-bar"></div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- ========== COMMANDS ========== -->
+    <section class="commands-section" id="commands">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Komutlar</span>
+                <h2 class="section-title">Basit <span class="gradient-text">sözdizimi.</span></h2>
+                <p class="section-desc">Hiçbir şeyi ezberlemek zorunda değilsiniz. Doğal yazın, NotaB anlasın.</p>
+            </div>
+
+            <div class="commands-grid">
+                <div class="command-card" data-animate>
+                    <div class="command-input">
+                        <span class="cmd-prefix">></span> 10 dolar
+                    </div>
+                    <div class="command-desc">USD → TRY döviz çevirisi</div>
+                </div>
+                <div class="command-card" data-animate>
+                    <div class="command-input">
+                        <span class="cmd-prefix">></span> 25 euro
+                    </div>
+                    <div class="command-desc">EUR → TRY döviz çevirisi</div>
+                </div>
+                <div class="command-card" data-animate>
+                    <div class="command-input">
+                        <span class="cmd-prefix">></span> 2^8 + sqrt(16)
+                    </div>
+                    <div class="command-desc">Matematik hesaplama → 260</div>
+                </div>
+                <div class="command-card" data-animate>
+                    <div class="command-input">
+                        <span class="cmd-prefix">></span> w: Türkiye
+                    </div>
+                    <div class="command-desc">Wikipedia'da Türkiye araması</div>
+                </div>
+                <div class="command-card" data-animate>
+                    <div class="command-input">
+                        <span class="cmd-prefix">></span> y: lofi beats
+                    </div>
+                    <div class="command-desc">YouTube'da video araması</div>
+                </div>
+                <div class="command-card" data-animate>
+                    <div class="command-input">
+                        <span class="cmd-prefix">></span> javascript nedir
+                    </div>
+                    <div class="command-desc">Akıllı web araması + Wikipedia özeti</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DOWNLOAD CTA ========== -->
+    <section class="cta-section" id="download">
+        <div class="container">
+            <div class="cta-card" data-animate>
+                <canvas id="ctaParticles" class="cta-canvas"></canvas>
+                <div class="cta-shapes">
+                    <div class="cta-shape cta-shape-1"></div>
+                    <div class="cta-shape cta-shape-2"></div>
+                    <div class="cta-shape cta-shape-3"></div>
+                    <div class="cta-shape cta-shape-4"></div>
+                    <div class="cta-shape cta-shape-5"></div>
+                </div>
+                <div class="cta-content">
+                    <h2 class="cta-title">Hemen <span class="gradient-text">başlayın.</span></h2>
+                    <p class="cta-desc">NotaB açık kaynaklı ve tamamen ücretsizdir. Windows 10 ve 11 desteklenir.</p>
+                    <div class="cta-actions">
+                        <a href="dist/NotaB-1.0.0-Setup.exe" download class="btn btn-primary btn-lg btn-glow">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" y1="15" x2="12" y2="3" />
+                            </svg>
+                            Windows için İndir
+                        </a>
+                    </div>
+                    <div class="cta-meta">
+                        <span>Windows 10+</span>
+                        <span class="dot">·</span>
+                        <span>Portable EXE</span>
+                        <span class="dot">·</span>
+                        <span>v1.0.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="NotaB" class="footer-logo">
+                <span>NotaB</span>
+            </div>
+            <div class="footer-links">
+                <a href="https://github.com/ebuword/notab" target="_blank" rel="noopener" class="footer-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                    GitHub
+                </a>
+            </div>
+            <div class="footer-copy">
+                © 2026 NotaB. Tüm hakları saklıdır.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
