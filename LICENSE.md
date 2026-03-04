@@ -1,39 +1,45 @@
 NotaB Launcher
-Son Kullanıcı Lisans Sözleşmesi (EULA)
+End User License Agreement (EULA)
+PLEASE READ THIS AGREEMENT CAREFULLY BEFORE INSTALLING OR USING THIS SOFTWARE.
 
-LÜTFEN BU YAZILIMI KURMADAN VEYA KULLANMADAN ÖNCE BU SÖZLEŞMEYİ DİKKATLİCE OKUYUN.
+This End User License Agreement ("Agreement") is a legally binding contract between you (either an individual or a single entity) and @ebuword ("Developer"), the developer of the NotaB Launcher software ("Software"). By using, downloading, installing, or otherwise accessing the Software, you agree to be bound by the terms of this Agreement.
 
-Bu Son Kullanıcı Lisans Sözleşmesi ("Sözleşme"), siz (gerçek kişi veya tek bir tüzel kişi) ile NotaB Launcher yazılımının ("Yazılım") geliştiricisi olan @ebuword ("Geliştirici") arasında yasal olarak bağlayıcı bir sözleşmedir. Bu Yazılımı kullanarak, indirerek, kurarak veya başka bir şekilde erişerek bu Sözleşmenin şartlarına bağlı kalmayı kabul etmiş olursunuz.
+1. GRANT OF LICENSE
+The Developer grants you a limited, revocable, non-exclusive, and non-transferable license to use the Software solely for your personal or internal business purposes. The Software is licensed, not sold.
 
-1. LİSANS VERİLMESİ
-Geliştirici size Yazılımı yalnızca kişisel veya şirket içi ticari amaçlarınız doğrultusunda kullanmanız için sınırlı, geri alınabilir, münhasır olmayan ve devredilemez bir lisans verir. Yazılım satılmamakta, yalnızca lisanslanmaktadır.
+2. RESTRICTIONS
+You agree not to:
 
-2. KISITLAMALAR
-Aşağıdakileri yapmamayı kabul edersiniz:
-a) Yazılımın kaynak kodunu değiştirmek, uyarlamak, tercüme etmek, tersine mühendislik yapmak, kaynak koduna dönüştürmek veya kaynak kodunu türetmeye çalışmak (ilgili yasaların bu tür eylemleri açıkça yasaklamadığı durumlar hariç).
-b) Yazılımı veya kopyalarını satmak, kiralamak, alt lisansını vermek veya ticari kazanç amacıyla dağıtmak.
-c) Yazılımı yasadışı herhangi bir amaç için veya yürürlükteki yasalara ya da düzenlemelere aykırı bir şekilde kullanmak.
-d) Yazılımdaki hiçbir telif hakkı bildirimini veya mülkiyet uyarısını kaldırmak ya da değiştirmek.
+a) Modify, adapt, translate, reverse engineer, decompile, disassemble, or attempt to derive the source code of the Software (except to the extent that such acts are expressly permitted by applicable law).
 
-3. KİŞİSEL VERİLERİN İŞLENMESİ VE GİZLİLİK
-a) Yazılım, daha iyi bir kullanıcı deneyimi sunabilmek için cihazınızdaki uygulamaları tarar, kullanım sıklığını loglar ve varsayılan olarak cihazınızda yerel formatta saklar (app-usage.json).
-b) Geliştirici (@ebuword) hiçbir şekilde kişisel verilerinizi, şifrelerinizi, dosya içeriklerinizi veya arama geçmişinizi uzak sunuculara aktarmaz, saklamaz veya üçüncü şahıslarla paylaşmaz. Tüm arama ve kullanım verileri yerel cihazınızda kalır.
-c) Bazı özellikler (Döviz, Wikipedia, TMDB vb.) için uygulamanın uzak sunuculara genel API istekleri (HTTP GET) atması gerekebilir. Bu işlemler tamamen uygulamanın çekirdek işlevi gereğidir.
+b) Sell, rent, lease, sublicense, or distribute the Software or copies thereof for commercial gain.
 
-4. FİKRİ MÜLKİYET
-Yazılımın ismi, tasarımı, kod altyapısı ve her türlü fikri mülkiyet hakkı Geliştirici'ye (@ebuword) aittir. Lisans kapsamında size yalnızca kullanım hakkı verilmektedir; hiçbir mülkiyet hakkı devredilmez.
+c) Use the Software for any illegal purpose or in violation of any applicable laws or regulations.
 
-5. GARANTİ REDDİ
-Yazılım "OLDUĞU GİBİ" sağlanmaktadır. Geliştirici, Yazılımın kesintisiz veya hatasız çalışacağını ya da belirli bir amaca uygunluğunu garanti etmez. Zımni ticari elverişlilik, belirli bir amaca uygunluk veya ihlal etmeme garantileri de dahil olmak üzere, her türlü zımni veya açık garanti reddedilmektedir.
+d) Remove or alter any copyright notices or proprietary legends on the Software.
 
-6. SORUMLULUĞUN SINIRLANDIRILMASI
-Geliştirici, Yazılımın kullanımından veya kullanılamamasından kaynaklanan doğrudan, dolaylı, arızi, özel veya sonuç olarak ortaya çıkan hiçbir zarardan (veri kaybı, kar kaybı, iş kesintisi, cihaz arızası vb.) hiçbir koşulda sorumlu tutulamaz. Yazılımın kullanımı tamamen sizin riskiniz altındadır.
+3. DATA PROCESSING AND PRIVACY
+a) To provide a better user experience, the Software scans applications on your device, logs usage frequency, and stores this data locally on your device by default (e.g., app-usage.json).
 
-7. SÖZLEŞMENİN FESHİ
-Bu Sözleşme, siz veya Geliştirici tarafından feshedilene kadar yürürlükte kalacaktır. Bu Sözleşmenin herhangi bir şartını veya koşulunu ihlal etmeniz halinde, size verilen lisans Geliştirici tarafından önceden bildirimde bulunmaksızın derhal otomatik olarak feshedilecektir. Fesih üzerine Yazılımın kullanımını tamamen durdurmalı ve tüm kopyalarını imha etmelisiniz.
+b) The Developer (@ebuword) does not transmit, store, or share your personal data, passwords, file contents, or search history with remote servers or third parties. All search and usage data remains on your local device.
 
-8. DEĞİŞİKLİKLER
-Geliştirici, kendi takdirine bağlı olarak bu Sözleşmeyi dilediği zaman değiştirme veya güncelleme hakkını saklı tutar. Yazılımın güncellenmiş sürümlerinin kullanımı, söz konusu güncel EULA şartlarının kabul edildiği anlamına gelir.
+c) For certain features (Currency, Wikipedia, TMDB, etc.), the application may need to make general API requests (HTTP GET) to remote servers. These operations are strictly required for the core functionality of the application.
 
-İlk Sürüm: 1.0.1
-Telif Hakkı (c) 2026 @ebuword. Tüm hakları saklıdır.
+4. INTELLECTUAL PROPERTY
+The name, design, code infrastructure, and all intellectual property rights of the Software belong to the Developer (@ebuword). Under this license, you are granted only the right to use the Software; no ownership rights are transferred.
+
+5. DISCLAIMER OF WARRANTY
+The Software is provided "AS IS." The Developer does not warrant that the Software will function uninterrupted or error-free, or that it is fit for a particular purpose. All implied or express warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, or non-infringement, are hereby disclaimed.
+
+6. LIMITATION OF LIABILITY
+Under no circumstances shall the Developer be held liable for any direct, indirect, incidental, special, or consequential damages (including loss of data, loss of profit, business interruption, device failure, etc.) arising out of the use of or inability to use the Software. Use of the Software is entirely at your own risk.
+
+7. TERMINATION
+This Agreement remains in effect until terminated by you or the Developer. If you violate any terms or conditions of this Agreement, the license granted to you will automatically terminate immediately without prior notice from the Developer. Upon termination, you must cease all use of the Software and destroy all copies.
+
+8. AMENDMENTS
+The Developer reserves the right to modify or update this Agreement at any time at their sole discretion. Use of updated versions of the Software constitutes acceptance of the current EULA terms.
+
+Initial Version: 1.0.1
+
+Copyright (c) 2026 @ebuword. All rights reserved.
