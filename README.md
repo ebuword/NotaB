@@ -1,0 +1,1 @@
+NotaB Launcher, ALT+SPACE kombinasyonu ile masaüstü bilgisayar kullanımınızı daha kolay hale getirmek için tasarlandı. Wikipedia, Google ve YouTube aramalarını hızlıca halledin. Matematiksel hesaplamalar yapın. TMDB entegrasyonu ile dizi-film arayın veya bilgisayardaki uygulamaları hızlıca başlatın. Hepsi tek bir yerde.
