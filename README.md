@@ -1,7 +1,5 @@
-NotaB Launcher, ALT+SPACE kombinasyonu ile masaüstü bilgisayar kullanımınızı daha kolay hale getirmek için tasarlandı. Wikipedia, Google ve YouTube aramalarını hızlıca halledin. Matematiksel hesaplamalar yapın. TMDB entegrasyonu ile dizi-film arayın veya bilgisayardaki uygulamaları hızlıca başlatın. Hepsi tek bir yerde.
-
 <div align="center">
-  <img src="landing/assets/logo.png" width="120" alt="NotaB Logo" />
+  <img src="assets/logo.png" width="120" alt="NotaB Logo" />
   <h1>NotaB</h1>
   <p>Minimalist, Hızlı ve Akıllı Windows Başlatıcısı</p>
 </div>
