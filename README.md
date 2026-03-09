@@ -8,7 +8,6 @@
   <a href="#özellikler">Özellikler</a> •
   <a href="#kurulum">Kurulum</a> •
   <a href="#kullanım">Kullanım</a> •
-  <a href="#derleme">Derleme</a>
 </p>
 
 ---
