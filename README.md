@@ -25,14 +25,27 @@ Sistem kaynaklarını minimum düzeyde kullanacak şekilde tasarlanmıştır.
   * `g <sorgu>`: Google araması
   * `y <sorgu>`: YouTube araması
   * `w <sorgu>`: Wikipedia araması
+  Veya doğrudan bir web sitesi adresi yazarak o siteye gidebilirsiniz. Örneğin: `google.com` veya `github.com/ebuword`
 * **Anlık Döviz Çevirici:** `10 eur` veya `50 usd` gibi sorgular yazarak anlık kurlarla döviz çevirisi yapar.
-* **Film ve Dizi Arama (TMDB):** TMDB entegrasyonu sayesinde `f <film adı>` şeklinde film bilgisi ve afişi getirebilirsiniz.
+* **Akıllı İftar & Sahur Vakti (Ramazan Özel):** `iftar`, `sahur` veya `namaz` yazarak coğrafi konumunuza göre (IP tabanlı) Diyanet uyumlu geri sayım widget'ını açıp günün vakitlerini görebilirsiniz.
+  * *İftar ve Sahur:* Vaktine ne kadar kaldığını anlık gösterir.
+  * *Namaz:* `namaz` araması yaptığınızda bir sonraki vakte olan süreyi gösterir.
+* **Film ve Dizi Arama (TMDB):** TMDB entegrasyonu sayesinde `f: film adı` şeklinde film bilgisi ve afişi getirebilirsiniz.
+* **Hesap Makinesi:** `120 * 45` gibi matematiksel işlemleri anında çözün.
 * **Pano (Clipboard) Entegrasyonu:** Karşınıza çıkan sonuçları enter'a basarak veya tıklayarak anında kopyalayabilirsiniz.
 * **Arka Plan Çalışması:** System tray (sistem tepsisi) üzerinden çalışır, işiniz bittiğinde arka planda gizlenerek kaynak tüketimini azaltır.
+* **Windows Açılışında Otomatik Başlatma:** Kurulumdan sonra bilgisayar her açıldığında NotaB otomatik olarak arka planda başlar. Sessiz başlangıç modu sayesinde herhangi bir müdahale gerektirmez.
+* **Profesyonel Kurulum Sihirbazı:** NSIS tabanlı tam teşekküllü kurulum sihirbazı ile kolayca kurulur. Masaüstü ve Başlat Menüsüne kısayollar otomatik oluşturulur.
 
 ## Kurulum
 
-[v1.0.1 Kurulum ve Uygulama Detayları](https://github.com/ebuword/NotaB/releases/tag/v1.0.1) adresinden kurulum dosyasına ve güncel detaylara erişebilirsiniz.
+[v1.1.0 Kurulum ve Uygulama Detayları](https://github.com/ebuword/NotaB/releases/tag/v1.1.0) adresinden kurulum dosyasına ve güncel detaylara erişebilirsiniz.
+
+### Hızlı Kurulum
+1. `NotaB-Setup-v1.1.0.exe` dosyasını indirin.
+2. Kurulum sihirbazını çalıştırın ve yönergeleri takip edin.
+3. Kurulum tamamlandıktan sonra `Alt + Space` ile aramaya başlayın.
+4. Bilgisayarınızı yeniden başlattığınızda NotaB otomatik olarak arka planda hazır olacaktır.
 
 ## — Kullanım
 
@@ -43,7 +56,8 @@ Uygulama çalıştıktan sonra arka planda beklemeye başlar. Arayüzü çağır
 Arama çubuğuna yazabileceğiniz bazı örnek sorgular:
 * `code` (Visual Studio Code'u bulur ve açar)
 * `github` (Varsayılan tarayıcınızda Google üzerinde 'github' araması yapar)
-* `100d, 25e` (Dolar veya Euro'nun anlık TL karşılığını gösterir)
+* `100d` veya `25e` (Dolar veya Euro'nun anlık TL karşılığını gösterir)
+* `iftar` (Konumunuza özel İftar veya Sahur geri sayımı başlatır)
 * `f: avatar` (TMDB'den Avatar film bilgisi ve afişi)
 
 Ekrana gelen sonuçlar arasında yön tuşlarıyla (Aşağı/Yukarı) gezinebilir ve `Enter` ile işlemi tetikleyebilirsiniz. ESC tuşu veya pencere dışına tıklamak uygulamayı anında gizler.
@@ -53,7 +67,7 @@ Ekrana gelen sonuçlar arasında yön tuşlarıyla (Aşağı/Yukarı) gezinebili
 * **Electron.js:** Masaüstü pencere yönetimi ve sistem entegrasyonu
 * **Node.js (fswin, windows-shortcuts):** Dosya sistemi tarama ve kısayol çözümleme
 * **Vanilla HTML/CSS/JS:** Frontend arayüzü (Herhangi bir JS framework'ü kullanılmadan, saf performans odaklı yazılmıştır)
-* **electron-builder:** Paketleme ve dağıtım
+* **electron-builder (NSIS):** Paketleme, kurulum sihirbazı ve dağıtım
 
 ## 📄 Lisans
 
