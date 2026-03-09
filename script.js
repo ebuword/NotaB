@@ -89,8 +89,17 @@ const scenes = [
         iconClass: 'wiki',
         value: 'İstanbul',
         valueSuffix: '',
-        label: "Tİstanbul, Türkiye'nin ekonomik, kültürel ve tarihî merkezini oluşturan en...",
+        label: "İstanbul, Türkiye'nin ekonomik, kültürel ve tarihî merkezini oluşturan en...",
         iconBg: 'linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05))',
+    },
+    {
+        text: 'github.com',
+        icon: '🌐',
+        iconClass: '',
+        value: 'GitHub: Let\'s build from here',
+        valueSuffix: '',
+        label: 'github.com',
+        iconBg: 'linear-gradient(135deg, rgba(167, 139, 250, 0.4), rgba(108, 140, 255, 0.2))',
     },
     {
         text: 'developed by ebuword',
@@ -417,7 +426,7 @@ const featureMockups = [
     },
     {
         id: 'featureMockupGeneral',
-        text: 'javascript',
+        text: 'github.com',
     },
 ];
 
