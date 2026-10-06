@@ -1712,37 +1712,10 @@ section::before {
     border-radius: 6px;
 }
 
-.footer-dev {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 13px;
-    color: var(--text-muted);
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.06);
-    padding: 6px 14px;
-    border-radius: 100px;
-    transition: all 0.3s ease;
-}
-
-.footer-dev:hover {
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(108, 140, 255, 0.25);
-    box-shadow: 0 4px 16px rgba(108, 140, 255, 0.1);
-}
-
-.footer-dev-avatar {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 1px solid rgba(108, 140, 255, 0.3);
-}
-
 .footer-dev-link {
     color: var(--accent);
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 500;
     transition: color 0.2s ease;
 }
 

@@ -116,8 +116,8 @@ const scenes = [
     {
         text: 'developed by ebuword',
         badge: { icon: '❤️', text: 'Geliştirici' },
-        icon: 'assets/ebu.png',
-        iconBg: 'linear-gradient(135deg, rgba(244, 114, 182, 0.2), rgba(244, 114, 182, 0.05))',
+        icon: '❤️',
+        iconBg: 'linear-gradient(135deg, #ff6b6b, #f06595)',
         value: '@ebuword',
         valueSuffix: '',
         label: 'Developed with ❤️ by @ebuword · GitHub',
