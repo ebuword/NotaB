@@ -1,0 +1,61 @@
+{
+  "name": "notab",
+  "version": "1.1.1",
+  "description": "Windows launcher - Alt+Space ile hızlı arama, döviz çevirisi, Wikipedia, YouTube, Google araması ve TMDB entegrasyonu ile film-dizi araması",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder --win nsis"
+  },
+  "keywords": [
+    "launcher",
+    "spotlight",
+    "windows",
+    "electron"
+  ],
+  "author": "@ebuword",
+  "license": "MIT",
+  "build": {
+    "appId": "com.notab.launcher",
+    "productName": "NotaB",
+    "directories": {
+      "output": "dist",
+      "buildResources": "build"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "updater.js",
+      "renderer/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "landing/assets/logo.png",
+      "publisherName": "@ebuword"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "installerHeaderIcon": "build/icon.ico",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "NotaB",
+      "artifactName": "NotaB-Setup-v${version}.exe",
+      "installerSidebar": "build/installer-sidebar.bmp",
+      "uninstallerSidebar": "build/installer-sidebar.bmp",
+      "include": "build/installer.nsh"
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.4.11",
+    "electron-builder": "^25.1.8"
+  },
+  "dependencies": {
+    "fswin": "^3.25.1108",
+    "windows-shortcuts": "^0.1.6"
+  }
+}

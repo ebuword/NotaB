@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production builds
+dist/
+
+# Local backups & scratch
+backup_original_design/
+*.tmp
+*.log
+
+# User tracking / runtime cache
+app-usage.json
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

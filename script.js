@@ -36,79 +36,82 @@ window.addEventListener('scroll', () => {
 // ===== Hero Mockup Typing Effect =====
 const typingEl = document.getElementById('mockupTyping');
 const resultEl = document.getElementById('mockupResult');
+const modeBadgeEl = document.getElementById('mockupModeBadge');
+const modeBadgeIconEl = document.getElementById('mockupModeBadgeIcon');
+const modeBadgeTextEl = document.getElementById('mockupModeBadgeText');
 
 const scenes = [
     {
-        text: 'Okan Şenol',
-        icon: 'assets/okan.png',
-        iconClass: 'wiki',
-        value: 'Okan Şenol',
-        valueSuffix: '',
-        label: "Osmanlının çöküşünden sonra ortaya çıkan gizemli ad...",
-        iconBg: 'linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05))',
-    },
-    {
-        text: '10d',
+        text: '10 usd',
+        badge: { icon: '💱', text: 'Döviz' },
         icon: '$',
-        iconClass: '',
-        value: '439,70',
+        iconBg: 'linear-gradient(135deg, rgba(108, 140, 255, 0.2), rgba(108, 140, 255, 0.05))',
+        value: '384,50',
         valueSuffix: '₺',
-        label: '10,00 $ ABD Doları → Türk Lirası',
-        iconBg: 'linear-gradient(135deg, #6c8cff, #4c6ef5)',
+        label: '10,00 $ ABD Doları → Türk Lirası · Canlı Serbest Piyasa',
     },
     {
-        text: '2 + 2',
-        icon: '=',
-        iconClass: 'math',
-        value: '4',
+        text: 'f: interstellar',
+        badge: { icon: '🎬', text: 'Film' },
+        icon: '🎬',
+        iconBg: 'linear-gradient(135deg, rgba(251, 146, 60, 0.2), rgba(251, 146, 60, 0.05))',
+        value: 'Interstellar (2014) · ⭐ 8.7',
         valueSuffix: '',
-        label: '2 + 2 =',
-        iconBg: 'linear-gradient(135deg, #4ade80, #22c55e)',
+        label: 'Christopher Nolan · Matthew McConaughey, Anne Hathaway',
     },
     {
-        text: '25e',
-        icon: '€',
-        iconClass: '',
-        value: '1.285,88',
-        valueSuffix: '₺',
-        label: '25,00 € Euro → Türk Lirası',
-        iconBg: 'linear-gradient(135deg, #6c8cff, #4c6ef5)',
+        text: 'iftar',
+        badge: { icon: '🌙', text: 'Vakit' },
+        icon: '🌙',
+        iconBg: 'linear-gradient(135deg, rgba(56, 189, 148, 0.2), rgba(56, 189, 148, 0.05))',
+        value: 'İftar Vaktine 03 saat 18 dakika',
+        valueSuffix: 'kaldı',
+        label: 'Akşam: 19:12 · Diyanet Uyumlu Konum Sayacı',
     },
     {
-        text: 'sqrt(144)',
+        text: 'sqrt(144) + 25 * 4',
+        badge: { icon: '🧮', text: 'Hesap' },
         icon: '=',
-        iconClass: 'math',
-        value: '12',
+        iconBg: 'linear-gradient(135deg, rgba(74, 222, 128, 0.2), rgba(74, 222, 128, 0.05))',
+        value: '112',
         valueSuffix: '',
-        label: 'sqrt(144) =',
-        iconBg: 'linear-gradient(135deg, #4ade80, #22c55e)',
+        label: 'sqrt(144) + 25 * 4 = 112 (Enter ile kopyala)',
     },
     {
-        text: 'w: İstanbul',
+        text: 'code',
+        badge: null,
+        icon: '⚡',
+        iconBg: 'linear-gradient(135deg, rgba(167, 139, 250, 0.2), rgba(167, 139, 250, 0.05))',
+        value: 'Visual Studio Code',
+        valueSuffix: '',
+        label: 'Microsoft Visual Studio Code · En Çok Kullanılan',
+    },
+    {
+        text: 'w: James Webb',
+        badge: { icon: '📖', text: 'Wiki' },
         icon: 'W',
-        iconClass: 'wiki',
-        value: 'İstanbul',
+        iconBg: 'linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.03))',
+        value: 'James Webb Uzay Teleskobu',
         valueSuffix: '',
-        label: "İstanbul, Türkiye'nin ekonomik, kültürel ve tarihî merkezini oluşturan en...",
-        iconBg: 'linear-gradient(135deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05))',
+        label: "Kızılötesi astronomi için tasarlanmış uzay gözlemevi...",
     },
     {
-        text: 'github.com',
+        text: 'y: lo-fi beats',
+        badge: { icon: '🌐', text: 'Web' },
+        icon: '▶',
+        iconBg: 'linear-gradient(135deg, rgba(255, 68, 68, 0.2), rgba(255, 68, 68, 0.05))',
+        value: 'lofi hip hop radio - beats to relax',
+        valueSuffix: '',
+        label: 'YouTube\'da anında video ve müzik araması',
+    },
+    {
+        text: 'github.com/ebuword',
+        badge: { icon: '🌐', text: 'Web' },
         icon: '🌐',
-        iconClass: '',
-        value: 'GitHub: Let\'s build from here',
+        iconBg: 'linear-gradient(135deg, rgba(34, 211, 238, 0.2), rgba(34, 211, 238, 0.05))',
+        value: 'github.com/ebuword',
         valueSuffix: '',
-        label: 'github.com',
-        iconBg: 'linear-gradient(135deg, rgba(167, 139, 250, 0.4), rgba(108, 140, 255, 0.2))',
-    },
-    {
-        text: 'developed by ebuword',
-        icon: 'assets/ebu.png',
-        iconClass: '',
-        value: '@ebuword',
-        valueSuffix: '',
-        label: 'Developed with ❤️ | Powered by Gemini 3.1 Pro',
-        iconBg: 'linear-gradient(135deg, #ff6b6b, #f06595)',
+        label: 'Hızlıca varsayılan tarayıcıda aç',
     },
 ];
 
@@ -118,16 +121,26 @@ async function playScene(scene) {
     // Clear
     typingEl.textContent = '';
     resultEl.classList.remove('show');
+    if (modeBadgeEl) {
+        modeBadgeEl.classList.add('hidden');
+    }
 
     await sleep(400);
+
+    // Show mode badge if available
+    if (scene.badge && modeBadgeEl && modeBadgeIconEl && modeBadgeTextEl) {
+        modeBadgeIconEl.textContent = scene.badge.icon;
+        modeBadgeTextEl.textContent = scene.badge.text;
+        modeBadgeEl.classList.remove('hidden');
+    }
 
     // Type
     for (let i = 0; i < scene.text.length; i++) {
         typingEl.textContent += scene.text[i];
-        await sleep(70 + Math.random() * 40);
+        await sleep(65 + Math.random() * 35);
     }
 
-    await sleep(600);
+    await sleep(500);
 
     // Show result
     const iconEl = resultEl.querySelector('.mockup-result-icon');
@@ -150,7 +163,7 @@ async function playScene(scene) {
 
     resultEl.classList.add('show');
 
-    await sleep(2800);
+    await sleep(2600);
 }
 
 async function runTypingLoop() {
