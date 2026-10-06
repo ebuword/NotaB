@@ -113,6 +113,15 @@ const scenes = [
         valueSuffix: '',
         label: 'Hızlıca varsayılan tarayıcıda aç',
     },
+    {
+        text: 'developed by ebuword',
+        badge: { icon: '❤️', text: 'Geliştirici' },
+        icon: 'assets/ebu.png',
+        iconBg: 'linear-gradient(135deg, rgba(244, 114, 182, 0.2), rgba(244, 114, 182, 0.05))',
+        value: '@ebuword',
+        valueSuffix: '',
+        label: 'Developed with ❤️ by @ebuword · GitHub',
+    },
 ];
 
 let currentScene = 0;
