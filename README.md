@@ -69,7 +69,7 @@ Arayüzü çağırmak için varsayılan sistem kısayolu:
 En son kararlı sürümü indirmek için [NotaB Sürümleri (Releases)](https://github.com/ebuword/NotaB/releases) sayfasına gidin.
 
 ### Hızlı Kurulum Adımları
-1. `NotaB-Setup-v1.1.1.exe` dosyasını indirin.
+1. `NotaB-Setup-v1.2.0.exe` dosyasını indirin.
 2. Kurulum sihirbazını başlatın ve kurulumu tamamlayın.
 3. Klavyenizden `Alt + Space` tuşlarına basarak NotaB'ı kullanmaya başlayın!
 

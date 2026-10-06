@@ -1,6 +1,6 @@
 {
   "name": "notab",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Windows launcher - Alt+Space ile hızlı arama, döviz çevirisi, Wikipedia, YouTube, Google araması ve TMDB entegrasyonu ile film-dizi araması",
   "main": "main.js",
   "scripts": {
@@ -31,7 +31,7 @@
     ],
     "win": {
       "target": "nsis",
-      "icon": "landing/assets/logo.png",
+      "icon": "build/icon.ico",
       "publisherName": "@ebuword"
     },
     "nsis": {
